@@ -1,0 +1,36 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recipes appt</title>
+    <link rel="stylesheet" href="{%static 'css/styles.css' %}">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a href="{% url 'home' %}">recipes app</a>
+        </h1>
+    </header>
+    {% if user.is_authenticated %}
+    <p>Hi {{ user.username }}!</p>
+    <p><form action="{% url 'logout' %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Logout</button>
+    </form>
+    </p>
+    {% else %}
+    <p>You are not logged in.</p>
+    <a href="{% url 'login' %}">Log In</a>
+    {% endif %}
+    <div>
+        {%block content%}
+        {%endblock content%}
+    </div>
+</body>
+
+</html>
