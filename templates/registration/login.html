@@ -1,11 +1,16 @@
 <!-- templates/registration/login.html -->
 {% extends 'base.html' %}
+{% load crispy_forms_tags %}
 {% block content %}
-<h2>Log In</h2>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Log In</button>
-</form>
-<p><a href="{%url 'signup'%}">signup</a></p>
+<div class = "container">
+    <div class= "centered">
+        <h2 id=>Log in</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <button id="signupb" type="submit">Log in</button>
+        </form>
+        <p><a href="{%url 'signup'%}">Sign up</a></p>
+    </div>
+</div>
 {% endblock content %}

@@ -9,4 +9,42 @@ body {
 
 h1 {
     color: #0044cc;
+    display: block;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: #0044cc;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.centered {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5%;
+    
+}
+#signupb{
+    background-color: rgb(78, 189, 78);
+    color: white;
+    border-style: hidden;
+    padding: 10px;
+    display: block;
+    margin: auto;
+    border-radius: 10%;
+    cursor: pointer;
+}
+#signupb:hover {
+    background-color: rgb(100, 100, 100); /* Darker green on hover */
+    color: white; /* Change text color */
+}
+
+h2{
+    display: flex;
+    justify-content: center;
 }
