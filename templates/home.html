@@ -6,6 +6,8 @@
 <h2>
     <a>{{post.title}}</a>
 </h2>
-<P>{{post.prep_time}}</P>
+{%if post.img%}
+    <img src="{{ post.img.url }}" alt="{{ post.title }}" width="500">
+{%endif%}
 {%endfor%}
 {%endblock content%}
