@@ -2,7 +2,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     color: #333;
     
 }
@@ -24,14 +24,12 @@ a{
 }
 
 .centered {
-    background-color: rgb(255, 255, 255);
+    background-color: #f4f4f4;
     padding: 20px;
     border-radius: 5%;
     
 }
-
-
-h2{
-    display: flex;
-    justify-content: center;
+.nav-text{
+    color: #f4f4f4;
+    font-size: xx-large;
 }
