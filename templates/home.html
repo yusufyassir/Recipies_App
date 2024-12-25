@@ -1,7 +1,9 @@
 {%include 'base.html'%}
 
 {%block content%}
-<p> <a href="{%url 'createpost'%}">add recipe</a></p>
+<button type="button" class="btn btn btn-primary add-recipe">
+    <a class="text-light " href="{%url 'createpost'%}">Add Recipe</a>
+</button>
 {%for post in recipes%}
 <div class="card bg-light mx-auto " style="max-width: 23rem; margin: 10px;">
     <img src="{{ post.img.url }}" alt="{{ post.title }}" class=" card-img-top img-fluid">

@@ -44,3 +44,7 @@ a{
 .textid{
     font-style: oblique;
 }
+
+.add-recipe{
+    margin: 10px;
+}
