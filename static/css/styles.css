@@ -33,3 +33,14 @@ a{
     color: #f4f4f4;
     font-size: xx-large;
 }
+.user{
+    margin: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+.card-body{
+    background-color: #cacaca;
+}
+.textid{
+    font-style: oblique;
+}

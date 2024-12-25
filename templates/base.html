@@ -18,19 +18,17 @@
         <nav class="navbar bg-dark " >
             <div class="container-fluid">
                 <a class="navbar-brand nav-text" href="{%url 'home'%}">Recipe App</a>
-                <button class="ms-auto ">
                     {% if user.is_authenticated %}
-                    <p><form action="{% url 'logout' %}" method="post">
+                    <p><form class="ms-auto" action="{% url 'logout' %}" method="post">
                         {% csrf_token %}
                         <button class="btn btn-light" type="submit">Logout</button>
                     </form>
                     {%endif%}
-                </button>
             </div>
         </nav>
     </header>
     {% if user.is_authenticated %}
-    <p>Hi {{ user.username }}!</p>
+    <p class="user">Hi {{ user.username }}!</p>
     {% else %}
     <div class = "container">
         <p>You are not logged in.</p>

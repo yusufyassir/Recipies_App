@@ -3,11 +3,14 @@
 {%block content%}
 <p> <a href="{%url 'createpost'%}">add recipe</a></p>
 {%for post in recipes%}
-<h2>
-    <a>{{post.title}}</a>
-</h2>
-{%if post.img%}
-    <img src="{{ post.img.url }}" alt="{{ post.title }}" width="500">
-{%endif%}
+<div class="card bg-light mx-auto " style="max-width: 23rem; margin: 10px;">
+    <img src="{{ post.img.url }}" alt="{{ post.title }}" class=" card-img-top img-fluid">
+    <div class="card-body">
+        <h3>
+            <a href="{%url 'detailpost' post.id%}" class="card-link">{{post.title}}</a>
+            <small class="text-body-secondary textid">- {{post.name}}</small>
+          </h3>
+    </div>
+</div>
 {%endfor%}
 {%endblock content%}
