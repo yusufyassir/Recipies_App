@@ -1,7 +1,30 @@
 {%include 'base.html'%}
 
 {%block content%}
-<p>
-    {{post.title}}
-</p>
+<img src="{{post.img.url}}" class="img-fluid" alt="...">
+<div class="recipe">
+    <h1 class="titled">
+        {{post.title}}
+    </h1>
+    <p>
+        Author: <i>{{post.name}}</i>
+        <br> prep time: {{post.prep_time}} minutes
+    </p>
+    <div>
+        <h1 class="titled">
+            Ingrediants
+        </h1>
+        <p>
+            {{post.ingredients}}
+        </p>
+    </div>
+    <div>
+        <h1 class="titled">
+            Steps
+        </h1>
+        <p>
+            {{post.steps}}
+        </p>
+    </div>
+</div>
 {%endblock content%}

@@ -1,8 +1,8 @@
 /* static/css/styles.css */
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #faf9f6;
     color: #333;
     
 }
@@ -50,4 +50,12 @@ a{
 }
 .loggedin{
     margin-top: 15px;
+}
+.recipe{
+    margin: 10px;
+}
+.titled{
+    color: black;
+    font-size: xx-large;
+    font-weight: bold;
 }
