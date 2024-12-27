@@ -1,25 +1,61 @@
 /* static/css/styles.css */
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #e8e8e8;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #faf9f6;
     color: #333;
     
 }
 
 h1 {
     color: #0044cc;
+    display: block;
+    margin: auto;
 }
 
-.container {
+a{
+    text-decoration: none;
+    color: #0044cc;
+}
+
+.container{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 .centered {
-    background-color: lightblue;
+    background-color: #c1c1c1;
     padding: 20px;
-    border: 1px solid blue;
+    border-radius: 5%;
+   
+}
+.nav-text{
+    color: #f4f4f4;
+    font-size: xx-large;
+}
+.user{
+    margin: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+.card-body{
+    background-color: #cacaca;
+}
+.textid{
+    font-style: oblique;
+}
+
+.add-recipe{
+    margin: 10px;
+}
+.loggedin{
+    margin-top: 15px;
+}
+.recipe{
+    margin: 10px;
+}
+.titled{
+    color: black;
+    font-size: xx-large;
+    font-weight: bold;
 }
