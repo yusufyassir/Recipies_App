@@ -136,7 +136,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = 'createpost'
-LOGOUT_REDIRECT_URL = 'createpost'
+LOGOUT_REDIRECT_URL = 'home'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap5'
  # Or 'bootstrap4', 'bootstrap', etc.
