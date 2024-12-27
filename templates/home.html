@@ -6,7 +6,9 @@
 </button>
 {%for post in recipes%}
 <div class="card bg-light mx-auto " style="max-width: 23rem; margin: 10px; ">
-    <img src="{{ post.img.url }}" alt="{{ post.title }}" class=" card-img-top img-fluid">
+    <div  style="width: 23rem; height: 17rem; overflow: hidden; position: relative;">
+        <img src="{{ post.img.url }}" alt="{{ post.title }}" class=" card-img-top img-fluid">
+    </div>
     <div class="card-body">
         <h3>
             <a href="{%url 'detailpost' post.id%}" class="card-link">{{post.title}}</a>

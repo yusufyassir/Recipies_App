@@ -1,7 +1,9 @@
 {%include 'base.html'%}
 
 {%block content%}
-<img src="{{post.img.url}}" class="img-fluid" alt="...">
+<div  style="width: max-content; height: 17rem; overflow: hidden; object-fit: cover; position: relative; ">
+    <img src="{{ post.img.url }}" alt="{{ post.title }}" class=" card-img-top img-fluid">
+</div>
 <div class="recipe">
     <h1 class="titled">
         {{post.title}}

@@ -8,7 +8,7 @@ class Post(models.Model):
     prep_time = models.IntegerField()
     ingredients = models.TextField()
     steps = models.TextField()
-    img = models.ImageField(upload_to='post_images/', null=True, blank=True)
+    img = models.ImageField(upload_to='post_images/', null=True)
 
     def __str__(self):
         return self.title
